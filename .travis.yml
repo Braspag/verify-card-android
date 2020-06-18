@@ -1,0 +1,17 @@
+language: android
+dist: trusty
+android:
+  components:
+    - build-tools-29.0.3
+    - android-29
+
+script:
+  - chmod +x ./gradlew
+  - ./gradlew clean :verify-card:clean :verify-card:assembleRelease
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./gradlew :verify-card:bintrayUpload
+  on:
+    branch: master

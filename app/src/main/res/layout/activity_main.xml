@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/spinner"
+            style="@android:style/Widget.Material.ProgressBar.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:minWidth="@dimen/width_progress_bar"
+            android:minHeight="@dimen/height_progress_bar" />
+
+        <TextView
+            android:id="@+id/spinner_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/text_spinner"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/result_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="@string/label_result"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_status"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_provider_return_code"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_provider_return_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_provider_return_message"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_provider_return_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_provider"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_provider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_card_type"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_foreign_card"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_foreign_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_code"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_message"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_corporate_card"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_corporate_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_issuer"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_issuer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_issuer_code"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_issuer_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_card_bin"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_card_bin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:text="@string/label_last_four_digits"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_bin_data_last_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_marginTop="@dimen/margin_normal"
+            android:id="@+id/errors_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

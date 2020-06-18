@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Verify Card</string>
+    <string name="text_spinner">Loading…</string>
+    <string name="label_result">RESULT:</string>
+    <string name="label_status">STATUS:</string>
+    <string name="label_provider_return_code">PROVIDER RETURN CODE:</string>
+    <string name="label_provider_return_message">PROVIDER RETURN MESSAGE:</string>
+    <string name="label_provider">PROVIDER:</string>
+    <string name="label_card_type">CARD TYPE:</string>
+    <string name="label_foreign_card">FOREIGN CARD:</string>
+    <string name="label_code">CODE:</string>
+    <string name="label_message">MESSAGE:</string>
+    <string name="label_corporate_card">CORPORATE CARD:</string>
+    <string name="label_issuer">ISSUER:</string>
+    <string name="label_issuer_code">ISSUER CODE:</string>
+    <string name="label_card_bin">CARD BIN:</string>
+    <string name="label_last_four_digits">LAST 4 DIGITS:</string>
+</resources>
