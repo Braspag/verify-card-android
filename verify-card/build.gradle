@@ -73,3 +73,5 @@ dependencies {
 
     implementation 'br.com.braspag:oauth:1.0.0'
 }
+
+apply from: 'publish.gradle'
